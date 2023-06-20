@@ -1,3 +1,26 @@
 :required {
     background-color:#F2A3BB;
 }
+
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
+@media screen and (max-width: 1280px){
+fieldset{
+    text-align: justify;
+    overflow: auto;
+}
+}
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+@media all and (min-width: 1024px) and (max-width: 1280px){
+fieldset{
+    text-align: justify;
+    overflow: auto;
+}
+}
+/* Sur tous types d'écrans orientés verticalement */
+@media all and (orientation: portrait){
+fieldset{
+    text-align: justify;
+    overflow: auto;
+}
+}
